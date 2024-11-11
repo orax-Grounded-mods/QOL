@@ -47,7 +47,7 @@ jobs:
         New-Item -Path . -Name "$targetDir\Scripts" -ItemType 'directory'
         New-Item -Path . -Name "$targetDir\enabled.txt" -ItemType 'file'
         New-Item -Path "$targetDir" -Name "version.txt" -ItemType "file" -Value $version
-        Move-Item -Path @('.luarc.json', 'LICENSE', 'options.lua') -Destination "$targetDir"
+        Move-Item -Path @('.luarc.json', 'options.lua') -Destination "$targetDir"
         Move-Item -Path @('Scripts\main.lua') -Destination "$targetDir\Scripts"
 
     - name: Create ZIP archive
