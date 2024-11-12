@@ -66,6 +66,7 @@ items:insert({
     id = "HandyGnatMovement",
     className = "/Script/Maine.BuilderMovementComponent",
     shortClassName = "BuilderMovementComponent",
+    minNumberOfInstancesToFind = 0,
 }, {
     MaxFlySpeed = 1200,               -- 1200.0,
     MaxAcceleration = 2048,           -- 2048.0,
